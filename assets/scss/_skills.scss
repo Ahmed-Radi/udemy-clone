@@ -1,0 +1,23 @@
+.skills {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    // padding: rem(20);
+    &-icon {
+        background-color: lightgray;
+        display: grid;
+        place-content: center;
+        border-radius: 50%;
+        height: rem(30);
+        width: rem(30);
+        margin-right: rem(7);
+        i {
+            padding: rem(10);
+        }
+    }
+    &-desc {
+        font-weight: 500;
+        display: grid;
+        place-content: center;
+    }
+}

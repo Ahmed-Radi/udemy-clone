@@ -1,0 +1,24 @@
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .category {
+        display: grid;
+        place-content: center;
+        flex: 1;
+        margin: rem(10);
+        &-image {
+            transition: transform 0.3s ease-in;
+            img {
+                border-radius: rem(5);
+            }
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+        &-title {
+            font-weight: 500;
+            margin-top: rem(5);
+        }
+    }
+}

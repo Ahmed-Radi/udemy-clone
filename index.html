@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Udemy</title>
+</head>
+<body>
+
+    <!-- Start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo-udemy.svg" alt="logo" width="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item" href="#">Development</a></li>
+                            <li><a href="#" class="dropdown-item" href="#">Business</a></li>
+                            <li><a href="#" class="dropdown-item" href="#">Finance & Accounting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item flex-auto">
+                        <form class="d-flex">
+                            <input class="form-control rounded-pill border-dark" type="search" placeholder="Search for anything" aria-label="Search">
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page" href="#">Udemy Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page" href="#">Teach on Udemy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart3"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page" href="#">
+                            <button type="button" class="btn btn-outline-dark" aria-label="login button">Login</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page" href="#">
+                            <button type="button" class="btn btn-dark" aria-label="Sign up button">Sign up</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page" href="#">
+                            <button type="button" class="btn btn-outline-dark" aria-label="languages button"><i class="bi bi-globe"></i></button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End navbar -->
+
+    <!-- Start header slider -->
+    <div class="container">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div>
+                        <img src="./assets/images/slider1.jpg" height="400" alt="first image" />
+                    </div>
+                    <div class="header-banner">
+                        <h4>Learning that gets you</h4>
+                        <p>
+                            Skills for your present (and your future). Get started with us.
+                            <a href="#">See details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div>
+                        <img src="./assets/images/slider1.jpg" height="400" alt="first image" />
+                    </div>
+                    <div class="header-banner">
+                        <h4>Learning that gets you</h4>
+                        <p>
+                            Skills for your present (and your future). Get started with us.
+                            <a href="#">See details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div>
+                        <img src="./assets/images/slider1.jpg" height="400" alt="first image" />
+                    </div>
+                    <div class="header-banner">
+                        <h4>Learning that gets you</h4>
+                        <p>
+                            Skills for your present (and your future). Get started with us.
+                            <a href="#">See details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev header-carousel-button" type="button" data-bs-target="#header-carousel" data-bs-slide="prev"  aria-label="slide prev button">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next header-carousel-button" type="button" data-bs-target="#header-carousel" data-bs-slide="next"  aria-label="slide next button">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+    <!-- End header slider -->
+    <!-- Start courses section -->
+    <section>
+        <div class="container">
+            <h3>A broad selection of courses</h3>
+            <p>Choose from 183,000 online video courses with new additions published every month.</p>
+            <div class="featured-courses">
+                <ul class="nav nav-tabs" id="featured-courses-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark active" id="python-tab" data-tab="python" data-bs-toggle="tab" data-bs-target="#python" type="button" role="tab" aria-controls="python" aria-selected="true" aria-label="python tab">Python</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark" id="html-tab" data-tab="html" data-bs-toggle="tab" data-bs-target="#html" type="button" role="tab" aria-controls="html" aria-selected="false" aria-label="html tab">HTML</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark" id="javascript-tab" data-tab="javascript" data-bs-toggle="tab" data-bs-target="#javascript" type="button" role="tab" aria-controls="javascript" aria-selected="false" aria-label="javascript tab">JavaScript</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="featured-courses-content">
+                    <div class="tab-pane fade show active" id="python" role="tabpanel" aria-labelledby="python-tab">
+                        <div class="tab-pane-content">
+                            <p class="h2">Expand your career opportunities with Python</p>
+                            <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to</p>
+                            <button type="button" class="btn btn-outline-dark"  aria-label="explore python tab">Explore Python</button>
+                        </div>
+                        <div class="carousel-cards">
+                            <div id="featured-courses-python" class="featured-courses-python carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-1.jpg" alt="course-1.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(400,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $110
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-2.jpg" alt="course-2.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $199
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-3.jpg" alt="course-3.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-4.jpg" alt="course-4.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-5.jpg" alt="course-5.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-6.jpg" alt="course-6.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev header-carousel-button" type="button" data-bs-target="#featured-courses-python" data-bs-slide="prev"  aria-label="slide prev button">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next header-carousel-button" type="button" data-bs-target="#featured-courses-python" data-bs-slide="next"  aria-label="slide next button">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HTML tab -->
+                    <div class="tab-pane fade" id="html" role="tabpanel" aria-labelledby="html-tab">
+                        <div class="tab-pane-content">
+                            <p class="h2">Build websites and applications with Web Development</p>
+                            <p>The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.</p>
+                            <button type="button" class="btn btn-outline-dark"  aria-label="explore html">Explore HTML</button>
+                        </div>
+                        <div class="carousel-cards">
+                            <div id="featured-courses-html" class="featured-courses-html carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-1.jpg" alt="course-1.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(400,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $110
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-2.jpg" alt="course-2.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $199
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-3.jpg" alt="course-3.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-4.jpg" alt="course-4.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-5.jpg" alt="course-5.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-6.jpg" alt="course-6.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev header-carousel-button" type="button" data-bs-target="#featured-courses-html" data-bs-slide="prev" aria-label="slide prev button">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next header-carousel-button" type="button" data-bs-target="#featured-courses-html" data-bs-slide="next" aria-label="slide next button">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- JavaScript tab -->
+                    <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="javascript-tab">
+                        <div class="tab-pane-content">
+                            <p class="h2">Grow your software development skills with JavaScript</p>
+                            <p>JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build</p>
+                            <button type="button" class="btn btn-outline-dark"  aria-label="explore javascript">Explore JavaScript</button>
+                        </div>
+                        <div class="carousel-cards">
+                            <div id="featured-courses-javascript" class="featured-courses-javascript carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-1.jpg" alt="course-1.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(400,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $110
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-2.jpg" alt="course-2.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $199
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-3.jpg" alt="course-3.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-4.jpg" alt="course-4.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                    <span class="course-bestseller">Best Seller</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-5.jpg" alt="course-5.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="course-card">
+                                                <div class="course-image">
+                                                    <img src="./assets/images/courses/course-6.jpg" alt="course-6.jpg">
+                                                </div>
+                                                <div class="course-body">
+                                                    <span class="course-title">Python for Data</span>
+                                                    <span class="course-teacher">Ahmed Radi</span>
+                                                    <span class="course-rating">
+                                                        <span class="course-rating-number">4.0</span>
+                                                        <span class="course-rating-stars">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-half"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </span>
+                                                        <span class="course-rating-number">(500,000)</span>
+                                                    </span>
+                                                    <span class="course-price">
+                                                        $11.99
+                                                        <span class="course-price-discount">$120</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev header-carousel-button" type="button" data-bs-target="#featured-courses-javascript" data-bs-slide="prev"  aria-label="slide prev button">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next header-carousel-button" type="button" data-bs-target="#featured-courses-javascript" data-bs-slide="next"  aria-label="slide next button">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End courses section -->
+    <!-- Start Skills  -->
+    <section>
+        <div class="container-fluid bg-light">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="skills">
+                            <div class="skills-icon">
+                                <i class="bi bi-caret-right-fill"></i>
+                            </div>
+                            <div class="skills-desc">
+                                Take one of range of Python courses and learn how to code using
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skills">
+                            <div class="skills-icon">
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="skills-desc">
+                                Take one of range of Python courses and learn how to code using
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skills">
+                            <div class="skills-icon">
+                                <i class="bi bi-infinity"></i>
+                            </div>
+                            <div class="skills-desc">
+                                Take one of range of Python courses and learn how to code using
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills -->
+    <!-- Start Categories  -->
+    <section>
+        <div class="container">
+            <h3>Top Categories</h3>
+            <div class="categories">
+
+                <a href="#" class="category">
+                    <div class="category-image">
+                        <img src="./assets/images/categories/category-1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="category-title">Design</div>
+                </a>
+
+                <a href="#" class="category">
+                    <div class="category-image">
+                        <img src="./assets/images/categories/category-2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="category-title">Development</div>
+                </a>
+                <a href="#" class="category">
+                    <div class="category-image">
+                        <img src="./assets/images/categories/category-3.jpg" alt="" srcset="">
+                    </div>
+                    <div class="category-title">Marketing</div>
+                </a>
+                <a href="#" class="category">
+                    <div class="category-image">
+                        <img src="./assets/images/categories/category-4.jpg" alt="" srcset="">
+                    </div>
+                    <div class="category-title">IT and Software</div>
+                </a>
+                <a href="#" class="category">
+                    <div class="category-image">
+                        <img src="./assets/images/categories/category-5.jpg" alt="" srcset="">
+                    </div>
+                    <div class="category-title">Personal Development</div>
+                </a>
+                <a href="#" class="category">
+                    <div class="category-image">
+                        <img src="./assets/images/categories/category-6.jpg" alt="" srcset="">
+                    </div>
+                    <div class="category-title">Business</div>
+                </a>
+                <a href="#" class="category">
+                    <div class="category-image">
+                        <img src="./assets/images/categories/category-7.jpg" alt="" srcset="">
+                    </div>
+                    <div class="category-title">Photography</div>
+                </a>
+                <a href="#" class="category">
+                    <div class="category-image">
+                        <img src="./assets/images/categories/category-8.jpg" alt="" srcset="">
+                    </div>
+                    <div class="category-title">Music</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Categories -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="container-fluid bg-dark text-light">
+            <div class="footer-menu">
+                <ul>
+                    <li class="footer-menu-item"><a href="#">Udemy Business</a></li>
+                    <li class="footer-menu-item"><a href="#">Teach on Udemy</a></li>
+                    <li class="footer-menu-item"><a href="#">Get the app</a></li>
+                    <li class="footer-menu-item"><a href="#">About us</a></li>
+                    <li class="footer-menu-item"><a href="#">Contact us</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-menu-item"><a href="#">Careers</a></li>
+                    <li class="footer-menu-item"><a href="#">Blog</a></li>
+                    <li class="footer-menu-item"><a href="#">Help and Support</a></li>
+                    <li class="footer-menu-item"><a href="#">Affiliate</a></li>
+                    <li class="footer-menu-item"><a href="#">Investors</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-menu-item"><a href="#">Terms</a></li>
+                    <li class="footer-menu-item"><a href="#">Privacy policy</a></li>
+                    <li class="footer-menu-item"><a href="#">Cookie settings</a></li>
+                    <li class="footer-menu-item"><a href="#">Sitemap</a></li>
+                    <li class="footer-menu-item"><a href="#">Accessibility statement</a></li>
+                </ul>
+                <div class="">
+                    <a href="#" class="nav-link">
+                        <button type="button" class="btn btn-outline-light">
+                            <i class="bi bi-globe"></i> English
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <div class="container-fluid bg-dark text-light sub-footer">
+        <div class="footer-logo">
+            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="log" width="100" height="50" />
+        </div>
+        <div class="copy-right">
+            © 2022 Udemy, Inc.
+        </div>
+    </div>
+
+
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

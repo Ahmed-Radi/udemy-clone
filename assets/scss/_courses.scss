@@ -1,0 +1,111 @@
+.tab-pane {
+    padding: rem(20);
+    border: 1px solid rgba($color: #000000, $alpha: 0.15);
+    border-top: 0;
+}
+.carousel-cards {
+    margin: rem(40) 0;
+    .carousel-item {
+        &-end.active,
+        &-next {
+            transform: translateX(25%);
+        }
+        &-start.active,
+        &-prev {
+            transform: translateX(-25%);
+        }
+        &.active,
+        &-prev,
+        &-next,
+        &-end {
+            display: flex;
+        }
+        &-start,
+        &-end {
+            transform: translateX(0);
+        }
+    }
+}
+.course-card {
+    padding: rem(10);
+}
+.course-image {
+    border: 1px solid rgba($color: #000000, $alpha: 0.45);
+    & > img {
+        width: 100%  ;
+    }
+}
+.course-body {
+    padding: rem(6);
+    .course {
+        &-title, &-teacher, &-price {
+            display: block;
+        }
+    }
+    .course-title {
+        font-size: rem(19);
+        font-weight: 500;
+    }
+    .course-teacher {
+        color: rgba($color: #000000, $alpha: 0.5);
+        font-size: rem(13);
+    }
+    .course-rating {
+        font-size: rem(14);
+    }
+    .course-rating-stars {
+        color: #daa520;
+    }
+    .course-price {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    .course-price-discount {
+        font-weight: normal;
+        font-size: 1rem;
+        color: rgba($color: #000000, $alpha: 0.5);
+        text-decoration: line-through;
+    }
+    .course-bestseller {
+        display: inline-block;
+        background-color: #eceb98;
+        font-size: rem(15);
+        font-weight: 500;
+        border-radius: 3px;
+        padding: 0 5px;
+    }
+}
+.featured-courses {
+    &-python,
+    &-html,
+    &-javascript {
+        .header-carousel-button {
+            background-color: #111;
+            height: 3rem;
+            width: 3rem;
+            padding: 1rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+        }
+        .carousel-control {
+            &-prev {
+                margin-left: 2rem;
+                opacity: 1;
+                &-icon {
+                    background-size: cover;
+                    color: #fff;
+                }
+            }
+            &-next {
+                margin-right: 2rem;
+                opacity: 1;
+                &-icon {
+                    background-size: cover;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+

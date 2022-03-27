@@ -1,0 +1,36 @@
+.header-carousel-button {
+    background-color: #111;
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+}
+.carousel-control {
+    &-prev {
+        margin-left: 2rem;
+        opacity: 1;
+        &-icon {
+            background-size: cover;
+            color: #fff;
+        }
+    }
+    &-next {
+        margin-right: 2rem;
+        opacity: 1;
+        &-icon {
+            background-size: cover;
+            color: #fff;
+        }
+    }
+}
+.header-banner {
+    position: absolute;
+    top: rem(60);
+    left: rem(60);
+    background-color: #fff;
+    display: block;
+    max-width: 400px;
+    padding: rem(20);
+}
